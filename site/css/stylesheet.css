@@ -1,3 +1,13 @@
 body {
     background-color: black; 
 }
+
+@media only screen and (max-width: 415px) and (max-height: 737px) {
+    .container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+    }
