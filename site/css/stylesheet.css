@@ -10,13 +10,14 @@ body {
         background-color: white;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(10, 1fr);
+        background-image: 
 
     }
 
     header {
-        grid-column: 1/6;
+        grid-column: 1/7;
         grid-row: 1/2;
-        background-color: #89cff0;
+        background-color: #008DA8;
         display: grid;
         align-items: center;
     }
@@ -31,11 +32,12 @@ body {
         -webkit-text-stroke: 1px black;
     }
 
-    .menu-icon {
-        background-color: black;
-        margin: 6px 0;
+    .material-icons {
         grid-row: 1/2;
-        grid-template: 6/7;
+        grid-column: 6/7;
+        font-size: 48px;
+        font-family: Material Icons;
+        align-items: center;
+        text-align: center;
     }
-
 }
