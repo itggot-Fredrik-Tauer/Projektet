@@ -10,7 +10,7 @@ body {
         background-color: white;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(10, 1fr);
-        background-image: 
+        background-image: url(../img/gym.jpg);
 
     }
 
@@ -25,6 +25,7 @@ body {
     .h1-header {
         margin: 0px;
         margin-left: 5px;
+        margin-top: 5px;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         color: white;
@@ -39,5 +40,6 @@ body {
         font-family: Material Icons;
         align-items: center;
         text-align: center;
+        margin-top: 5px;
     }
 }
