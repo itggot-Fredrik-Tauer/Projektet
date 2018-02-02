@@ -9,13 +9,30 @@
 </head>
 <body>
     <div class="container">
+        <div class="menu">
+            <i class="material-icons" onclick="toggleMenu()">close</i>
+            <ul>
+                <a href="https://www.youtube.com/"><li>Om oss<br><br></li></a>
+                <a href="https://www.youtube.com/"><li>Boka tid<br><br></li></a>
+                <a href="https://www.youtube.com/"><li>FAQ/Kontakta<br><br></li></a>
+                <a href="https://www.youtube.com/"><li>Våra anläggningar<br><br></li></a>
+            </ul>
+        </div>
         <header>
             <h1 class="h1-header">
                 Rehabilitering
             </h1>
-            <i class="material-icons">menu</i>
+            <i class="material-icons" onclick="toggleMenu()">menu</i>
         </header>
         <div class="om_oss"></div>
+        <button class="knapp_om_oss">Läs mer --></button>
+        <h1 class="titel_om_oss">Om oss</h1>
+        <p class="text_om_oss">Här hos Rehabilitering jobbar vi aktivt 
+            med att hjälpa dem i nöd (för en liten peng). <br><br>
+            Vi har personliga tränare, många maskiner och erbjuder hjälp 
+            till alla som behöver rehabilitering.
+        </p>
     </div>
+    <script src="js/menu.js"></script>
 </body>
 </html>
