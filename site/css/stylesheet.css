@@ -42,6 +42,7 @@ body {
         align-items: center;
         text-align: center;
         margin-top: 5px;
+        transition-timing-function: ease;
     }
 
     .om_oss {
@@ -78,7 +79,23 @@ body {
         text-align: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         color: #F5F5F5;
-        text-shadow: 2px 2px 5px black;
+        text-shadow: 2px 2px 5px grey;
+    }
+
+    .fade-layer{
+        display: none;
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        opacity: 0;
+        transition: ease-in 1s;
+    }
+    
+    .fade {
+        display: block;
+        opacity: 0.5;
+        transition: ease-out 1s;
     }
 
     .menu{
@@ -89,10 +106,24 @@ body {
         display: none;
         text-align: right;
         margin-left: 50vw;
+        transition-timing-function: ease;
+        z-index: 11;
+        transition-delay: 1s;
+    }
+
+    ul {
+        text-align: left;
+    }
+
+    a {
+        text-decoration: none;
     }
     
-
     .show{
         display: block;
+        transition: ease-out 1s;
+        position: absolute;
+        transition-timing-function: ease;
     }
+
 }
