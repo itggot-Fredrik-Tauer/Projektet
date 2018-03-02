@@ -10,8 +10,9 @@ body {
         height: 100vh;
         background-color: white;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-rows: repeat(9, 1fr);
         background-image: url(../img/gym.jpg);
+        grid-row-gap: 2vh;
 
     }
 
@@ -24,9 +25,11 @@ body {
     }
 
     .h1-header {
+        grid-column: 2/7;
+        grid-row: 1/2;
         margin: 0px;
-        margin-left: 5px;
-        margin-top: 5px;
+        margin-left: 2vw;
+        margin-bottom: 0.5vh;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: bold;
         color: white;
@@ -36,23 +39,21 @@ body {
 
     .material-icons {
         grid-row: 1/2;
-        grid-column: 6/7;
+        grid-column: 1/2;
         font-size: 48px;
         font-family: Material Icons;
-        align-items: center;
-        text-align: center;
-        margin-top: 5px;
         transition-timing-function: ease;
     }
 
     .om_oss {
         grid-row: 2/6;
         grid-column: 1/7;
-        background-image: url(../img/om_oss.png);
+        background-image: url(../img/om_oss2.png);
         background-repeat: no-repeat;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 10px;
+        background-position: center;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        margin-top: 2vh;
         box-shadow: 5px 5px 5px;
     }
 
@@ -62,11 +63,12 @@ body {
     }
 
     .titel_om_oss {
-        grid-row: 2/3;
+        grid-row: 2/4;
         grid-column: 3/5;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         color: white;
         text-shadow: 2px 2px 5px black;
+        font-size: 32px;
         text-align: center;
     }
 
@@ -75,10 +77,10 @@ body {
         grid-column: 1/7;
         margin-left: 15px;
         margin-right: 15px;
-        margin-top: -5px;
+        margin-top: 10px;
         text-align: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: #F5F5F5;
+        color: black;
         text-shadow: 2px 2px 5px grey;
     }
 
@@ -89,7 +91,6 @@ body {
         height: 100vh;
         position: absolute;
         opacity: 0;
-        transition: ease-in 1s;
     }
     
     .fade {
@@ -103,12 +104,11 @@ body {
         height: 100vh;
         position: absolute;
         background: white;
-        display: none;
-        text-align: right;
-        margin-left: 50vw;
-        transition-timing-function: ease;
+        display: block;
+        transform: translateX(-100%);
+        text-align: left;
+        transition: transform ease-out 0.5s;
         z-index: 11;
-        transition-delay: 1s;
     }
 
     ul {
@@ -119,11 +119,73 @@ body {
         text-decoration: none;
     }
     
-    .show{
+    .show {
         display: block;
-        transition: ease-out 1s;
+        transition: transform ease-out 0.5s;
         position: absolute;
-        transition-timing-function: ease;
+        transform: translateX(0%);
     }
 
+    .erbjudande {
+        grid-row: 6/10;
+        grid-column: 4/7;
+        background-image: url(../img/erbjudande.png);
+        margin-bottom: 2vh;
+        margin-right: 2vh;  
+        background-position: center;
+        box-shadow: 5px 5px 5px;
+        margin-left: 1vh;
+    }
+
+    .h1-erbjudande {
+        grid-row: 6/8;
+        grid-column: 4/7;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        font-size: 27px;
+        text-align: left;
+        margin-left: 1vh;
+    }
+
+    .p-erbjudande {
+        grid-row: 7/10;
+        grid-column: 4/7;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        font-size: 22px;
+        text-align: left;
+        margin-top: 5vh;
+        margin-left: 1vh;
+    }
+
+    .boka {
+        grid-row: 8/10;
+        grid-column: 1/4;
+        background-color: #54B848;
+        margin-bottom: 2vh;
+        margin-top: 7vh;
+        margin-right: 1vh;
+        margin-left: 2vh;
+    }
+
+    .kontakta {
+        grid-row: 7/9;
+        grid-column: 1/4;
+        background-color: #008DA8;
+        margin-bottom: 5vh;
+        margin-left: 2vh;
+        margin-right: 1vh;
+        margin-top: 4vh;
+    }
+
+    .platser {
+        grid-row: 6/8;
+        grid-column: 1/4;
+        background-color: #008DA8;
+        margin-right: 1vh;
+        margin-left: 2vh;
+        margin-bottom: 8vh;
+    }
 }
