@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css.scss">
+    <title>Document</title>
+</head>
+<body>
+    <div class="fade-layer"></div>
+    <div class="container">
+        <div class="menu">
+            <i class="material-icons" onclick="toggleMenu()">close</i>
+            <ul>
+                <a href="index.html"><li>Huvudsida<br><br></li></a>
+                <a href="om_oss.html"><li>Om oss<br><br></li></a>
+                <a href="boka_nu.html"><li>Boka tid<br><br></li></a>
+                <a href="kontakta.html"><li>FAQ/Kontakta<br><br></li></a>
+                <a href="https://www.google.se/maps?source=tldsi&hl=sv"><li>Våra anläggningar<br><br></li></a>
+                <a href="erbjudande.html"><li>Erbjudande</li></a>
+            </ul>
+        </div>
+        <%= yield %>
