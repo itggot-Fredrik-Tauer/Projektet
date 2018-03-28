@@ -1,0 +1,105 @@
+.textruta_om_oss {
+    grid-column: 2/6;
+    grid-row: 2/8;
+    background-color: rgb(224, 224, 190);
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.p_om_oss {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 5px grey;
+    bottom: 4vh;
+    left: 2vw;
+    position: relative;
+    margin-right: 3vw;
+}
+
+.om_oss_om_oss {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 5px grey;
+    bottom: 2vh;
+    left: 1vw;
+    right: 1vw;
+    position: relative;
+
+}
+
+.boka_om_oss {
+    grid-row: 8/10;
+    grid-column: 2/4;
+    background-color: #54B848;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-top: 3.5vh;
+    margin-bottom: 5.5vh;
+    box-shadow: 5px 5px 5px;
+}
+
+.h2_boka_nu_om_oss {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    grid-column: 1/4;
+    grid-row: 8/10;
+    bottom: 0.5vh;
+    position: relative;
+}
+
+.kontakta_om_oss {
+    grid-row: 8/10;
+    grid-column: 4/6;
+    background-color: #008DA8;
+    margin-bottom: 5.5vh;
+    margin-left: 2vh;
+    margin-right: 1vh;
+    margin-top: 3.5vh;
+    box-shadow: 5px 5px 5px;
+}
+
+.FAQ_om_oss {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    grid-column: 1/4;
+    grid-row: 7/9;
+    font-size: 22px;
+    bottom: 0vh;
+    position: relative;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 415px) and (max-height: 737px) {
+
+   .textruta_om_oss {
+        grid-column: 1/7;
+        grid-row: 2/8;
+        background-color: rgb(224, 224, 190);
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    .boka_om_oss {
+        grid-row: 8/10;
+        grid-column: 1/4;
+        background-color: #54B848;
+        margin-left: 1vh;
+        margin-right: 1vh;
+        margin-top: 3.5vh;
+        margin-bottom: 5.5vh;
+        box-shadow: 5px 5px 5px;
+    }
+    
+    .kontakta_om_oss {
+        grid-row: 8/10;
+        grid-column: 4/7;
+        background-color: #008DA8;
+        margin-bottom: 5.5vh;
+        margin-left: 2vh;
+        margin-right: 1vh;
+        margin-top: 3.5vh;
+        box-shadow: 5px 5px 5px;
+    }
+}

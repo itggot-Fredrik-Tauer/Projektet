@@ -1,0 +1,46 @@
+
+ .REA_erbjudande {
+    grid-column: 2/6;
+    grid-row: 2/8;
+    background-color: #DF0000;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.h1-REA {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.boka_erbjudande {
+    grid-row: 8/10;
+    grid-column: 2/6;
+    background-color: #54B848;
+    margin-bottom: 4vh;
+    margin-top: 3vh;
+    margin-right: 1vh;
+    margin-left: 2vh;
+    box-shadow: 5px 5px 5px;
+}
+
+.boka_nu_erbjudande {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    grid-column: 2/6;
+    grid-row: 8/10;
+    position: relative;
+}
+@media only screen and (max-width: 415px) and (max-height: 737px) {
+    .REA_erbjudande {
+        grid-column: 1/7;
+        grid-row: 2/8;
+        background-color: #DF0000;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+}
